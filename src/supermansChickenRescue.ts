@@ -30,7 +30,6 @@ export function supermansChickenRescue(
     left = 0;
 
   while (right < n) {
-    // If Superman can handle more, he will stay in the nested while loop and expand the roof length until he can't anymore.
     while (right < n && roofLen <= k) {
       right++; // Expand sliding window to the right which means expanding the roof length.
       roofLen = positions[right] - positions[left] + 1; // Keep track of the roof length after expansion.
