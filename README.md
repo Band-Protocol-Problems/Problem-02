@@ -54,6 +54,8 @@ chickens at positions 30, 34, 35, and 37. Thus, he can protect a maximum of 4 ch
 
 For this problem, initially, a brute-force approach came to mind as it could go through each combination,but it would be inefficient. Instead, the Sliding Window technique is employed. By expanding the window to the right and tracking the number of chickens within the roof length, and then shrinking from the left when the roof length exceeds the limit, the maximum number of chickens protected could be determined.
 
+![Jot Note](./src/assets/images/jot-note.jpg)
+
 ### Chosen Approach
 
 The chosen approach utilizes the Sliding Window technique, which is ideal for problems involving subarrays or contiguous segments. This method allows us to efficiently find the maximum number of chickens Superman can protect without having to examine every possible subarray explicitly.
