@@ -30,7 +30,7 @@ export function supermansChickenRescue(
     left = 0;
 
   while (right < n) {
-    while (right < n && roofLen <= k) {
+    while (roofLen <= k) {
       right++; // Expand sliding window to the right which means expanding the roof length.
       roofLen = positions[right] - positions[left] + 1; // Keep track of the roof length after expansion.
     }
